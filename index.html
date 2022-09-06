@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8" name="viewport" content="width=device-width"/>
+        <meta charset="utf-8" />
         <style>
+            @media (max-width: 300px) {
+  figure {
+    width: 100%; /* largeur à 300px */
+    margin-left:0; /* supprimer la marge */
+    /* Optionnel float:none; // Supprimer l’alignement */
+    max-width:300px; /* Annuler le max-width:250px; */
+  }
+  figcaption {
+    font-size:1.2em;
+  }
+}
         .grid-container {
           display: grid;
           grid-template-rows: 100px 100px 100px 100px;
